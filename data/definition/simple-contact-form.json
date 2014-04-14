@@ -1,0 +1,28 @@
+{
+	"id": "simple-contact-form",
+	"schema": "performs-0.5",
+	"content": [{
+		"id": "fullName",
+		"type": "string",
+		"label": "Full name"
+	}, {
+		"id": "phone",
+		"type": "string",
+		"label": "Contact phone number"
+	}, {
+		"id": "email",
+		"type": "string",
+		"label": "E–mail address",
+		"required": true
+	}, {
+		"id": "subscription",
+		"type": "boolean",
+		"label": "Subscribe to our newsletter",
+		"value": true
+	}, {
+		"id": "message",
+		"type": "long-string",
+		"label": "Message",
+		"required": true
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	"id": "constants",
+	"schema": "performs-0.5",
+	"version": "1",
+	"constants": [{
+		"id": "vat",
+		"type": "float",
+		"value": 0.2
+	}, {
+		"id": "company",
+		"type": "string",
+		"value": "MegaCorp Inc."
+	}]
+}

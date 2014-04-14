@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<!-- Performs.
+     UI builder app.
+     https://github.com/tripu/.........................
+     http://soroban.tripu.info/...................
+     http://tripu.info
+     © 2014 tripu. All rights reserved.
+     Distributed under the terms of the GNU General Public License, version 3. -->
+
+<html lang="en-GB">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="application-name" content="Performs">
+		<meta name="description" content="UI Builder app">
+		<meta name="keywords" content="performs,form,forms,ui,ui builder,builder,tripu,app,JavaScript,JS">
+		<meta name="author" content="tripu">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Performs&nbsp;&mdash;&nbsp;an HTML UI engine written in JavaScript by tripu</title>
+
+		<!-- link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		 <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- a class="navbar-brand" href="#">Per<span class="highlight">forms</span></a -->
+					<span class="navbar-brand"><span class="performs">Per<span class="forms">forms</span></span>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+						<li><a data-toggle="tab" href="#doc">Documentation</a></li>
+						<li><a data-toggle="tab" href="#contact">Contact</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples &amp; tutorial <b class="caret"></b></a>
+							<!-- a class="dropdown-toggle" data-toggle="dropdown">Examples &amp; tutorial <b class="caret"></b></a -->
+							<ul class="dropdown-menu">
+								<li id="simple-contact-form" class="example"><a data-toggle="tab" href="#examples">#1: a simple contact form</a></li>
+								<li id="quadratic-equation" class="example"><a data-toggle="tab" href="#examples">#2: quadratic equation solver</a></li>
+								<li id="advanced-form" class="example"><a data-toggle="tab" href="#examples">#3: advanced form</a></li>
+								<li id="foo" class="example"><a data-toggle="tab" href="#examples">#4: statistical computations</a></li>
+								<li id="bar" class="example"><a data-toggle="tab" href="#examples">#5: checkout form for a hardware store</a></li>
+							</ul>
+						</li>
+					</ul -->
+					<p id="status" class="navbar-text navbar-right hidden">
+						<span id="statusIcon"></span>
+						<span id="statusText"></span></p>
+				</div>
+			</div>
+		</div>
+
+		<h1 class="hidden">Performs&nbsp;&mdash;&nbsp;an HTML UI engine written in JavaScript by tripu</h1>
+
+		<div id="content" class="tab-content">
+
+			<div id="home" class="tab-pane fade container in active">
+				<div class="row">
+					<div class="col-md-12">
+
+						<h2>This is <span class="performs">Per<span class="forms">forms</span></h2>
+
+						<p><span class="performs">Per<span class="forms">forms</span></span> is a JavaScript library capable of interpreting,
+							rendering and processing beautiful, complex HTML <abbr title="User Interface">UI</abbr>'s for you.</p>
+						<p>UI's are defined declaratively in JSON, and there is a flexible system of <em>partials</em> or <em>includes</em> so
+							that you can reuse parts of your UI accross your site, avoiding redundancies.</p>
+						<p>But what makes Performs really powerful is that it knows how to deal with data.</p>
+						<p>At this stage, Performs deals with static, text&ndash;based input UI's only&nbsp;&mdash;&nbsp;forms with <em>text inputs</em>,
+							<em>radio buttons</em>, <em>drop&ndash;down menus</em>, etc. Hence the name.</p>
+
+						<h3>Why would I want to use it?</h3>
+						<p>For several reasons:</p>
+						<ul>
+							<li>When your web site is made up of many pages, your HTML application includes many views, you have long forms
+								with many fields, and/or these are changing frequently. By writing and maintaining a library of JSON definitions
+								and letting Performs handle that for you, you may save some time dealing with HTML layout, JavaScript logic and CSS tweaks.</li>
+								<li>When your client needs to be able to correct or evolve their forms often, but they lack the skills to write HTML and JS.</li>
+						</ul>
+
+						<h3>Source code</h3>
+						<p>On GitHub.</p>
+
+						<h3>License</h3>
+						<p>© 2014 tripu. All rights reserved.</p>
+						<p>Distributed under the terms of the GNU General Public License, version 3.
+							Which basically means that you can modify, share and use it for free.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="doc" class="tab-pane fade container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>How it all works</h2>
+						<p>Coming soon&hellip;</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="contact" class="tab-pane fade container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Hi, I'm tripu</h2>
+						<p>You can reach me on <a href="http://tripu.info/"><tt>http://tripu.info</tt></a> and at
+							<tt>tripu<span class="obfuscated">#</span>tripu<span class="obfuscated">_</span>info</tt>.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="examples" class="tab-pane fade container">
+
+				<div class="row">
+
+					<div class="col-md-4">
+						<h2 id="sources-title">Source <small></small></h2>
+						<div id="sources" class="panel-group hidden"></div>
+					</div>
+
+					<div class="col-md-8">
+
+						<h2 id="ui-title">UI <small></small></h2>
+						<div id="ui" class="panel panel-default hidden">
+	  						<div class="panel-body">
+	  							<form role="form" class="form-horizontal"></form>
+	  						</div>
+	  					</div>
+
+						<h2 id="result-title">Result <small></small></h2>
+						<div id="result" class="panel panel-default hidden">
+	  						<div class="panel-body"></div>
+	  					</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="segments" class="hidden">
+
+			<div id="sourceSegment" class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						<a data-toggle="collapse"><tt></tt></a>
+					</h3>
+				</div>
+				<div class="panel-collapse collapse in">
+					<div class="panel-body"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.min.js"</script>
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script -->
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+
+		<!-- script type="text/javascript" src="js/require.js"></script>
+		<script type="text/javascript" src="js/escape-html.js"></script>
+		<script type="text/javascript" src="js/highlight.js"></script>
+		<script type="text/javascript" src="js/highlight-json.js"></script -->
+
+		<script type="text/javascript" src="js/json2.js"></script>
+		<script type="text/javascript" src="js/behaviour.js"></script>
+
+	</body>
+
+</html>
+
+<!-- EOF -->
+
