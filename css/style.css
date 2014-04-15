@@ -49,5 +49,9 @@ div#content {
 	color:				#000000;
 }
 
+span.monospace {
+	font-family:		Inconsolata, Consolas, "Courier New", Courier;
+}
+
 /* EOF */
 

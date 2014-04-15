@@ -189,8 +189,8 @@
 		$(newSource).attr('id', 'source-' + json.id);
 		$('h3 > a', newSource).attr('data-parent', '#sources')
 			.attr('href', '#json-' + json.id)
-			.find('> tt').html(PARTIALS_DEFINITION_PREFIX + json.id + PARTIALS_SUFFIX);
-		$('> div:odd', newSource).attr('id', 'json-' + json.id);
+			.find('> span.monospace').html(PARTIALS_DEFINITION_PREFIX + json.id + PARTIALS_SUFFIX);
+        $('> div:odd', newSource).attr('id', 'json-' + json.id);
 		$('div > div', newSource).html('<pre>' + JSON.stringify(json, null, 2) + '</pre>');
 		$('#sources > div > div').removeClass('in');
 		$('h2#sources-title > small').html(successfulRequests + (successfulRequests > 1 ? ' partials' : ' partial'));

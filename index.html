@@ -12,7 +12,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 		<meta name="application-name" content="Performs">
 		<meta name="description" content="UI Builder app">
 		<meta name="keywords" content="performs,form,forms,ui,ui builder,builder,tripu,app,JavaScript,JS">
@@ -42,7 +42,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!-- a class="navbar-brand" href="#">Per<span class="highlight">forms</span></a -->
-					<span class="navbar-brand"><span class="performs">Per<span class="forms">forms</span></span>
+					<span class="navbar-brand"><span class="performs">Per<span class="forms">forms</span></span></span>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
@@ -53,14 +53,14 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples &amp; tutorial <b class="caret"></b></a>
 							<!-- a class="dropdown-toggle" data-toggle="dropdown">Examples &amp; tutorial <b class="caret"></b></a -->
 							<ul class="dropdown-menu">
-								<li id="simple-contact-form" class="example"><a data-toggle="tab" href="#examples">#1: a simple contact form</a></li>
-								<li id="quadratic-equation" class="example"><a data-toggle="tab" href="#examples">#2: quadratic equation solver</a></li>
-								<li id="advanced-form" class="example"><a data-toggle="tab" href="#examples">#3: advanced form</a></li>
-								<li id="foo" class="example"><a data-toggle="tab" href="#examples">#4: statistical computations</a></li>
-								<li id="bar" class="example"><a data-toggle="tab" href="#examples">#5: checkout form for a hardware store</a></li>
+								<li id="simple-contact-form" class="example"><a data-toggle="tab" href="#examples">#1 Simple contact form</a></li>
+								<li id="quadratic-equation" class="example"><a data-toggle="tab" href="#examples">#2 Quadratic equation solver</a></li>
+								<li id="advanced-form" class="example"><a data-toggle="tab" href="#examples">#3 Advanced form</a></li>
+								<!-- li id="foo" class="example"><a data-toggle="tab" href="#examples">#4: statistical computations</a></li>
+								<li id="bar" class="example"><a data-toggle="tab" href="#examples">#5: checkout form for a hardware store</a></li -->
 							</ul>
 						</li>
-					</ul -->
+					</ul>
 					<p id="status" class="navbar-text navbar-right hidden">
 						<span id="statusIcon"></span>
 						<span id="statusText"></span></p>
@@ -76,14 +76,14 @@
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2>This is <span class="performs">Per<span class="forms">forms</span></h2>
+						<h2>This is <span class="performs">Per<span class="forms">forms</span></span></h2>
 
 						<p><span class="performs">Per<span class="forms">forms</span></span> is a JavaScript library capable of interpreting,
 							rendering and processing beautiful, complex HTML <abbr title="User Interface">UI</abbr>'s for you.</p>
 						<p>UI's are defined declaratively in JSON, and there is a flexible system of <em>partials</em> or <em>includes</em> so
-							that you can reuse parts of your UI accross your site, avoiding redundancies.</p>
-						<p>But what makes Performs really powerful is that it knows how to deal with data.</p>
-						<p>At this stage, Performs deals with static, text&ndash;based input UI's only&nbsp;&mdash;&nbsp;forms with <em>text inputs</em>,
+							that you can reuse parts of your UI accross your site, avoiding redundancy.</p>
+						<p>But what makes <span class="performs">Per<span class="forms">forms</span></span> really powerful is that it knows how to deal with data.</p>
+						<p>At this stage, <span class="performs">Per<span class="forms">forms</span></span> deals with static, text&ndash;based input UI's only&nbsp;&mdash;&nbsp;forms with <em>text inputs</em>,
 							<em>radio buttons</em>, <em>drop&ndash;down menus</em>, etc. Hence the name.</p>
 
 						<h3>Why would I want to use it?</h3>
@@ -91,12 +91,12 @@
 						<ul>
 							<li>When your web site is made up of many pages, your HTML application includes many views, you have long forms
 								with many fields, and/or these are changing frequently. By writing and maintaining a library of JSON definitions
-								and letting Performs handle that for you, you may save some time dealing with HTML layout, JavaScript logic and CSS tweaks.</li>
+								and letting <span class="performs">Per<span class="forms">forms</span></span> handle that for you, you may save some time dealing with HTML layout, JavaScript logic and CSS tweaks.</li>
 								<li>When your client needs to be able to correct or evolve their forms often, but they lack the skills to write HTML and JS.</li>
 						</ul>
 
 						<h3>Source code</h3>
-						<p>On GitHub.</p>
+						<p><a href="https://github.com/tripu/Performs">On GitHub.</a></p>
 
 						<h3>License</h3>
 						<p>© 2014 tripu. All rights reserved.</p>
@@ -119,8 +119,8 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2>Hi, I'm tripu</h2>
-						<p>You can reach me on <a href="http://tripu.info/"><tt>http://tripu.info</tt></a> and at
-							<tt>tripu<span class="obfuscated">#</span>tripu<span class="obfuscated">_</span>info</tt>.</p>
+						<p>You can reach me on <a href="http://tripu.info/"><span class="monospace">http://tripu.info</span></a> and at
+							<span class="monospace">tripu<span class="obfuscated">#</span>tripu<span class="obfuscated">_</span>info</span>.</p>
 					</div>
 				</div>
 			</div>
@@ -161,7 +161,7 @@
 			<div id="sourceSegment" class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
-						<a data-toggle="collapse"><tt></tt></a>
+						<a data-toggle="collapse"><span class="monospace"></span></a>
 					</h3>
 				</div>
 				<div class="panel-collapse collapse in">
