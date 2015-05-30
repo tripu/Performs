@@ -1,0 +1,43 @@
+{
+  "name": "performs",
+  "version": "0.2.0",
+  "description": "An HTML UI engine written in JavaScript",
+  "author": "tripu <tripu@tripu.info> http://tripu.info/",
+  "contributors": [
+    {
+      "name": "tripu",
+      "email": "tripu@tripu.info"
+    }
+   ],
+  "keywords": [
+    "performs",
+    "form",
+    "engine",
+    "JavaScript",
+    "HTML",
+    "HTML5"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tripu/Performs"
+  },
+  "bugs": {
+    "url": "https://github.com/tripu/Performs/issues"
+  },
+  "main": "lib/performs.js",
+  "preferGlobal": false,
+  "private": false,
+  "dependencies": {
+    "winston": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+  },
+  "engines": {
+    "node": ">=0.10",
+    "npm": ">=2.4"
+  }
+}
