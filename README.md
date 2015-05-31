@@ -85,7 +85,7 @@ var performs = new Performs();
 performs.perform('https://example.com/options.json', '#userPreferences');
 ```
 
-If everything goes OK, new elements will created inside the initial (empty) form, and the resulting document will be:
+After Performs is done, new elements will created inside the initial (empty) form, and the resulting document will be:
 
 ```html
 <html>
@@ -117,7 +117,7 @@ If everything goes OK, new elements will created inside the initial (empty) form
 
 However, rendering a form programmatically like this wouldn't be that difficult, or particularly useful.
 The interesting part is that Performs *understands* the relations between fields.
-So for example, en el example above,
+So for example, in the JSON above,
 
 ```
 {
@@ -131,21 +131,22 @@ So for example, en el example above,
 
 means:
 
-* &ldquo;Add a field with ID `email`, for strings, showing a particular label&rdquo;
+* &ldquo;Add a field with ID `email`, of type &laquo;string&raquo;, showing this label&rdquo;
 * &ldquo;This field *has to have* a value, or the form can't be submitted&rdquo;
 * **&ldquo;Whenever the value of the field `givenName` or the value of the field `familyName` change, change automatically the value of `email`, according to
-the expression specified.&rdquo;** Given name `John` and family name `Smith` would produce the value `JohnSmith@example.com` for this field.
+the expression specified.&rdquo;**
+For instance, the given name `John` and the family name `Smith` would produce the value `JohnSmith@example.com` for this field.
 
 To achieve this, Performs adds event listeners to all necessary fields.
 Input-only fields (like `givenName` here) will *notify* other fields whenever their values change.
 
-Performs detects *cycles* (circular dependencies among fields), which are forbidden for obvious reasons, and alerts the users if there is any.
+Performs detects *cycles* (circular dependencies among fields), which are forbidden for obvious reasons, and alerts the users if there are any.
 
 There are other useful features, like:
 
-* Read-only fields, useful for output-only fields, eg results of computations or informative fields.
-* Automatically disabling fields depending on expressions.
-* Hidden fields, useful for temporary computations, or to send extra data along with the visible form
+* Read-only fields, useful for output-only data, eg results of computations or informative messages
+* Automatically disabling fields depending on expressions
+* Hidden fields, useful to hold temporary results, or to send extra data along with the visible form
 
 The expressions understood by Performs, like the one above, extend regular JavaScript syntax, so in theory they can get as complex as needed, and anything is
 possible.
@@ -166,11 +167,11 @@ The class `Performs` exposes the following properties and methods.
 ### Method `perform`
 
 * Expects these arguments:
-** `json`: `stream`, `document`, `file`, a `String` containing a URL, or a `String` containing JSON
-** `form`: jQuery-like selector that identifies one (and only one) `<form>` element, eg `'.fields'`, `'form#userInput'`
+ * `json`: `stream`, `document`, `file`, a `String` containing a URL, or a `String` containing JSON
+ * `form`: jQuery-like selector that identifies one (and only one) `<form>` element, eg `'.fields'`, `'form#userInput'`
 * Returns: `0` if everything goes OK
 * Throws:
-  * `SyntaxError` if the number of arguments is not 2
+ * `SyntaxError` if the number of arguments is not 2
 
 ## Test suite
 
