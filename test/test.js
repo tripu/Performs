@@ -11,14 +11,16 @@
 
 // Dependencies:
 var assert = require('assert'),
+    meta = require('../package.json'),
     Performs = require('../lib/performs').Performs;
 
 var performs = new Performs();
 
 describe('API', function() {
 
-  it('has String property “version”', function(){
+  it('has String property “version”, which returns the right value', function(){
     assert.equal(typeof performs.version, 'string');
+    assert.equal(performs.version, meta.version);
   });
 
   it('has method “perform”, expecting 2 arguments', function(){
