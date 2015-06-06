@@ -33,9 +33,15 @@
   },
   "devDependencies": {
     "mocha": "^2.2.5",
-    "jsdoc": "^3.3"
+    "jsdoc": "^3.3",
+    "docco": "^0.7",
+    "yuidocjs": "^0.7"
   },
   "scripts": {
+    "test": "mocha",
+    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r lib/",
+    "docco": "docco -o doc/docco/ lib/*",
+    "yuidoc": "yuidoc -o doc/yuidoc/ lib/"
   },
   "engines": {
     "node": ">=0.10",
