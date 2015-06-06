@@ -16,11 +16,11 @@ var assert = require('assert'),
 
 var performs = new Performs();
 
-describe('API', function() {
+describe('Public interface: class Performs', function() {
 
-  it('has String property “version”, which returns the right value', function(){
-    assert.equal(typeof performs.version, 'string');
-    assert.equal(performs.version, meta.version);
+  it('has static property “version”, of type String, which returns the right value', function(){
+    assert.equal(typeof Performs.version, 'string');
+    assert.equal(Performs.version, meta.version);
   });
 
   it('has method “perform”, expecting 2 arguments', function(){
