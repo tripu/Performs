@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/tripu/Performs/issues"
   },
-  "main": "Performs.js",
+  "main": "performs.js",
   "preferGlobal": false,
   "private": false,
   "dependencies": {

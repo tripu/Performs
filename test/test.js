@@ -11,8 +11,8 @@
 var assert       = require('assert'),
     meta         = require('../package.json'),
     utils        = require('../lib/utils'),
-    Model        = require('../lib/Model').Model,
-    Performs     = require('../Performs').Performs,
+    Model        = require('../lib/model').Model,
+    Performs     = require('../performs').Performs,
     dataSimplest = require('./data/simplest'),
     dataBasic    = require('./data/basic'),
     dataWithDeps = require('./data/withDeps');
