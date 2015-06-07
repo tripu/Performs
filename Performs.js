@@ -3,10 +3,10 @@
 
 // Dependencies:
 var winston = require('winston');
-var utils = require('./utils');
+var utils = require('./lib/utils');
 
 // Pseudo-constants:
-var VERSION        = require('../package.json').version;
+var VERSION        = require('./package.json').version;
 var ENV_PRODUCTION = 'production';
 var LOG_PRODUCTION = 'warn';
 var LOG_DEBUGGING  = 'verbose';
