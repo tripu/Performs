@@ -29,19 +29,18 @@
   "preferGlobal": false,
   "private": false,
   "dependencies": {
-    "winston": "^1.0.0"
+    "winston": "^1.0.0",
+    "request": "^2.57"
   },
   "devDependencies": {
-    "mocha": "^2.2.5",
+    "mocha": "^2.2",
     "jsdoc": "^3.3",
-    "docco": "^0.7",
     "yuidocjs": "^0.7"
   },
   "scripts": {
-    "test": "mocha",
-    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r lib/",
-    "docco": "docco -o doc/docco/ lib/*",
-    "yuidoc": "yuidoc -o doc/yuidoc/ lib/"
+    "test": "mocha --ui bdd",
+    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r lib/ # -P package.json -R README.md",
+    "yuidoc": "yuidoc -o doc/yuidoc/ -T default lib/"
   },
   "engines": {
     "node": ">=0.10",
