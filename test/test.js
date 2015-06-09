@@ -13,9 +13,8 @@ var assert       = require('assert'),
     utils        = require('../lib/utils'),
     Model        = require('../lib/model').Model,
     Performs     = require('../performs').Performs,
-    dataSimplest = require('./data/simplest'),
-    dataBasic    = require('./data/basic'),
-    dataWithDeps = require('./data/withDeps');
+    dataInFile   = require('./data/simplest'),
+    dataPool     = require('./data/pool');
 
 // Pseudo-constants:
 var URL_WRONG = 'http://i.do.not.exist';
@@ -61,26 +60,26 @@ describe('Class Model', function() {
 
   it('can process the simplest JSON', function(){
     assert.doesNotThrow(function() {
-      m.build(dataSimplest);
+      m.build(dataInFile);
     }, Error);
     assert.deepEqual(m.fields, {});
-    assert.deepEqual(m.dependencies, {});
+    assert.deepEqual(m.deps, {});
   });
 
   it('understands fields and their values', function(){
     assert.doesNotThrow(function() {
-      m.build(dataBasic);
+      m.build(dataPool.withFields);
     }, Error);
-    assert.deepEqual(m.fields, {});
-    assert.deepEqual(m.dependencies, {});
+    assert.deepEqual(m.fields, {'a': {'id': 'a', 'value': 'valueA'}, 'b': { 'id': 'b', 'value': '42'}});
+    assert.deepEqual(m.deps, {});
   });
 
   it('understands dependencies among fields', function(){
     assert.doesNotThrow(function() {
-      m.build(dataWithDeps);
+      m.build(dataPool.withDeps);
     }, Error);
-    console.dir(m.fields);
-    console.dir(m.deps);
+    assert.deepEqual(m.fields, {'a': {'id': 'a'}, 'b': {'id': 'b', 'value': '{{@a + 1}}', 'dynamic': true}});
+    assert.deepEqual(m.deps, {'a': ['b']});
   });
 
 });

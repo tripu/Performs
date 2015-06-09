@@ -30,7 +30,8 @@
   "private": false,
   "dependencies": {
     "winston": "^1.0.0",
-    "request": "^2.57"
+    "request": "^2.57",
+    "babel": "^5.5.6"
   },
   "devDependencies": {
     "mocha": "^2.2",
@@ -39,7 +40,7 @@
   },
   "scripts": {
     "test": "mocha --ui bdd",
-    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r lib/ # -P package.json -R README.md",
+    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r performs.js lib/ test/ # -P package.json -R README.md",
     "yuidoc": "yuidoc -o doc/yuidoc/ -T default lib/"
   },
   "engines": {
