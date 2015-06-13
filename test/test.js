@@ -51,21 +51,24 @@ describe('lib/utils', function() {
 
 describe('Class Model', function() {
 
-  var m = new Model();
+  var m;
 
   it('fails with bogus input', function(){
+    m = new Model();
     assert.throws(function() {
       m.build(42);
     }, Error);
   });
 
   it('fails if JSON version is not compatible', function(){
+    m = new Model();
     assert.throws(function() {
       m.build(notSupported);
     }, Error);
   });
 
   it('can process the simplest JSON', function(){
+    m = new Model();
     assert.doesNotThrow(function() {
       m.build(simple);
     }, Error);
@@ -74,20 +77,13 @@ describe('Class Model', function() {
     assert.equal(200, m.fields.age.max);
   });
 
-  it('understands fields and their values', function(){
-    assert.doesNotThrow(function() {
-      m.build(dataPool.withFields);
-    }, Error);
-    assert.deepEqual(m.fields, {'a': {'id': 'a', 'value': 'valueA'}, 'b': { 'id': 'b', 'value': '42'}});
-    assert.deepEqual(m.deps, {});
-  });
-
   it('understands dependencies among fields', function(){
+    m = new Model();
     assert.doesNotThrow(function() {
-      m.build(dataPool.withDeps);
+      m.build(withDeps);
     }, Error);
-    assert.deepEqual(m.fields, {'a': {'id': 'a'}, 'b': {'id': 'b', 'value': '{{@a + 1}}', 'dynamic': true}});
-    assert.deepEqual(m.deps, {'a': ['b']});
+    /* console.dir(m.fields);
+    console.dir(m.deps); */
   });
 
 });
