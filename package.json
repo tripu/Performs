@@ -43,7 +43,7 @@
   "scripts": {
     "test": "mocha --ui bdd",
     "test-ui": "node test/test-ui.js",
-    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r performs.js lib/ test/ # -P package.json -R README.md"
+    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r lib/ test/ # -P package.json -R README.md"
   },
   "engines": {
     "node": "^0.10",
