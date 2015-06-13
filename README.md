@@ -33,7 +33,7 @@ Let's assume the HTML document is this:
     <p>Enter your details to create your new e-mail account!</p>
     <form id="userPreferences">
   </body>
-<html>
+</html>
 ```
 
 And let's assume the URL `https://example.com/options.json` returns this JSON object:
@@ -110,7 +110,7 @@ After Performs is done, new elements will created inside the initial (empty) for
       </label>
     </form>
   </body>
-<html>
+</html>
 ```
 
 &hellip;effectively *translating* the JSON object into an HTML form.

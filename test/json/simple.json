@@ -1,0 +1,24 @@
+{
+  "pf-schema": "0.2.0",
+  "content": [
+    {
+      "id": "name",
+      "type": "text",
+      "label": "Name",
+      "required": true
+    },
+    {
+      "id": "age",
+      "type": "integer",
+      "label": "Age",
+      "min": 0,
+      "max": 200
+    },
+    {
+      "id": "likes",
+      "type": "bool",
+      "label": "I like Performs!",
+      "value": true
+    }
+  ]
+}

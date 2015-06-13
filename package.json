@@ -25,26 +25,28 @@
   "bugs": {
     "url": "https://github.com/tripu/Performs/issues"
   },
-  "main": "performs.js",
+  "main": "lib/performs.js",
   "preferGlobal": false,
   "private": false,
   "dependencies": {
+    "babel": "^5.5.6",
     "winston": "^1.0.0",
+    "express": "^4.12",
     "request": "^2.57",
-    "babel": "^5.5.6"
+    "cheerio": "^0.19",
+    "semver": "^4.3"
   },
   "devDependencies": {
     "mocha": "^2.2",
-    "jsdoc": "^3.3",
-    "yuidocjs": "^0.7"
+    "jsdoc": "^3.3"
   },
   "scripts": {
     "test": "mocha --ui bdd",
-    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r performs.js lib/ test/ # -P package.json -R README.md",
-    "yuidoc": "yuidoc -o doc/yuidoc/ -T default lib/"
+    "test-ui": "node test/test-ui.js",
+    "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r performs.js lib/ test/ # -P package.json -R README.md"
   },
   "engines": {
-    "node": ">=0.10",
-    "npm": ">=2.4"
+    "node": "^0.10",
+    "npm": "^2.4"
   }
 }

@@ -1,0 +1,38 @@
+{
+  "pf-schema": "0.2.0",
+  "content": [
+    {
+      "id": "a",
+      "type": "float",
+      "label": "a",
+      "value": 1,
+      "required": true
+    }, {
+      "id": "b",
+      "type": "float",
+      "label": "b",
+      "value": -1,
+      "required": true
+    }, {
+      "id": "c",
+      "type": "float",
+      "label": "c",
+      "value": -2,
+      "required": true
+    }, {
+      "id": "solution1",
+      "type": "float",
+      "label": "Solution #1",
+      "editable": false,
+      "output": true,
+      "value": "(-$b - Math.sqrt($b * $b - (4 * $a * $c))) / (2 * $a)"
+    }, {
+      "id": "solution2",
+      "type": "float",
+      "label": "Solution #2",
+      "editable": false,
+      "output": true,
+      "value": "(-$b + Math.sqrt($b * $b - (4 * $a * $c))) / (2 * $a)"
+    }
+  ]
+}

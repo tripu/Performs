@@ -12,12 +12,13 @@ var assert       = require('assert'),
     meta         = require('../package.json'),
     utils        = require('../lib/utils'),
     Model        = require('../lib/model').Model,
-    Performs     = require('../performs').Performs,
-    dataInFile   = require('./data/simplest'),
-    dataPool     = require('./data/pool');
+    Performs     = require('../lib/performs').Performs,
+    notSupported = require('./json/not-supported'),
+    simple       = require('./json/simple'),
+    withDeps     = require('./json/with-dependencies');
 
 // Pseudo-constants:
-var URL_WRONG = 'http://i.do.not.exist';
+var URL_WRONG = 'http://i-do.not/exist';
 var URL_RIGHT = 'https://tripu.github.io/Performs/data/definition/simple-contact-form.json';
 
 describe('lib/utils', function() {
@@ -58,12 +59,19 @@ describe('Class Model', function() {
     }, Error);
   });
 
+  it('fails if JSON version is not compatible', function(){
+    assert.throws(function() {
+      m.build(notSupported);
+    }, Error);
+  });
+
   it('can process the simplest JSON', function(){
     assert.doesNotThrow(function() {
-      m.build(dataInFile);
+      m.build(simple);
     }, Error);
-    assert.deepEqual(m.fields, {});
-    assert.deepEqual(m.deps, {});
+    assert(m.fields);
+    assert(m.fields.age);
+    assert.equal(200, m.fields.age.max);
   });
 
   it('understands fields and their values', function(){
