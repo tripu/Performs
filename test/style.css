@@ -1,0 +1,48 @@
+
+* {
+  box-sizing:       border-box;
+  margin:           0;
+  border:           0;
+  padding:          0;
+  background-color: #f8f8f8;
+  color:            #404040;
+  font-family:      "Lucida Sans Unicode", "Lucida Grande", "Trebuchet MS", Helvetica, Verdana, Geneva, Calibri, sans-serif;
+}
+
+body {
+  margin:           2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin:           1em 0 0.5em 0;
+  clear:            both;
+}
+
+pre.source {
+  float:            left;
+  width:            33%;
+  font-family:      monospace;
+  font-size:        smaller;
+  overflow:         overlay;
+  border:           1px solid #c0c0c0;
+  background-color: #ffffff;
+}
+
+form {
+  width:            33%;
+  margin:           0 34%;
+  padding:          0.5em;
+  border:           1px solid #c0c0c0;
+  box-shadow:       0 2px 4px #c0c0c0;
+}
+
+input {
+  padding:          0.25em 0.5em;
+  border:           1px solid #c0c0c0;
+  background-color: #ffffff;
+}
+
+input[type=submit] {
+  background-color: #e0e0e0;
+}
+
