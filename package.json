@@ -8,7 +8,7 @@
       "name": "tripu",
       "email": "tripu@tripu.info"
     }
-   ],
+  ],
   "keywords": [
     "performs",
     "form",
@@ -29,12 +29,12 @@
   "preferGlobal": false,
   "private": false,
   "dependencies": {
-    "babel": "^5.5.6",
-    "winston": "^1.0.0",
+    "babel": "^6.1.18",
+    "cheerio": "^0.19",
     "express": "^4.12",
     "request": "^2.57",
-    "cheerio": "^0.19",
-    "semver": "^4.3"
+    "semver": "^5.1.0",
+    "winston": "^2.1.1"
   },
   "devDependencies": {
     "mocha": "^2.2",
