@@ -41,7 +41,7 @@
     "jsdoc": "^3.3"
   },
   "scripts": {
-    "test": "mocha --ui bdd",
+    "test": "mocha --ui bdd -c -G",
     "test-ui": "node test/test-ui.js",
     "jsdoc": "jsdoc -a all -d doc/jsdoc/ -e utf8 -r lib/ test/ # -P package.json -R README.md"
   },
