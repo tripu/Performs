@@ -1,3 +1,2 @@
-
-Please be nice.
-
+Thank you for contributing!
+Please, be nice.

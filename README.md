@@ -1,4 +1,3 @@
-
 # <span style="color: #c00000;">Per</span>forms
 
 *An HTML UI engine written in JavaScript.*
@@ -181,7 +180,6 @@ $ mocha
 
 ## Credits
 
-Copyright © 2014–2015 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`http://tripu.info`](http://tripu.info/))
+Copyright &copy; 2014&ndash;2016 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`https://tripu.info`](https://tripu.info/))
 
-This project is licensed [under the terms of the MIT license](LICENSE.md).
-
+This project is licenced [under the terms of the MIT licence](LICENSE.md).
