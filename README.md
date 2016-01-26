@@ -1,10 +1,10 @@
 # <span style="color: #c00000;">Per</span>forms
 
-*An HTML UI engine written in JavaScript.*
+An HTML UI engine written in JavaScript.
 
-* [Web site](https://tripu.github.io/Performs/)
-* [GitHub](https://tripu.github.io/Performs)
-* [npm](https://tripu.github.io/Performs)
+* [Web site](https://tripu.github.io/Performs/).
+* [GitHub](https://tripu.github.io/Performs).
+* [npm](https://tripu.github.io/Performs).
 
 ## Installation
 
@@ -130,8 +130,8 @@ So for example, in the JSON above,
 
 means:
 
-* &ldquo;Add a field with ID `email`, of type &laquo;string&raquo;, showing this label&rdquo;
-* &ldquo;This field *has to have* a value, or the form can't be submitted&rdquo;
+* &ldquo;Add a field with ID `email`, of type &laquo;string&raquo;, showing this label&rdquo;.
+* &ldquo;This field *has to have* a value, or the form can't be submitted&rdquo;.
 * **&ldquo;Whenever the value of the field `givenName` or the value of the field `familyName` change, change automatically the value of `email`, according to
 the expression specified.&rdquo;**
 For instance, the given name `John` and the family name `Smith` would produce the value `JohnSmith@example.com` for this field.
@@ -143,16 +143,16 @@ Performs detects *cycles* (circular dependencies among fields), which are forbid
 
 There are other useful features, like:
 
-* Read-only fields, useful for output-only data, eg results of computations or informative messages
-* Automatically disabling fields depending on expressions
-* Hidden fields, useful to hold temporary results, or to send extra data along with the visible form
+* Read-only fields, useful for output-only data, eg results of computations or informative messages.
+* Automatically disabling fields depending on expressions.
+* Hidden fields, useful to hold temporary results, or to send extra data along with the visible form.
 
 The expressions understood by Performs, like the one above, extend regular JavaScript syntax, so in theory they can get as complex as needed, and anything is
 possible.
 The basic syntax is:
 
-* Curly brackets signal an expression, eg `{{2015 === new Date().getFullYear()}}`
-* An ID prefixed by `@` refers to the *value* of that field, eg `{{@givenName.replace(/\s/, '') /* Remove spaces */}}`
+* Curly brackets signal an expression, eg `{{2015 === new Date().getFullYear()}}`.
+* An ID prefixed by `@` refers to the *value* of that field, eg `{{@givenName.replace(/\s/, '') /* Remove spaces */}}`.
 
 ## API
 
@@ -160,17 +160,17 @@ The class `Performs` exposes the following properties and methods.
 
 ### Property `version`
 
-* Type: `String`
-* Example: `'0.2.0'`
+* Type: `String`.
+* Example: `'0.2.0'`.
 
 ### Method `perform`
 
 * Expects these arguments:
- * `json`: `stream`, `document`, `file`, a `String` containing a URL, or a `String` containing JSON
- * `form`: jQuery-like selector that identifies one (and only one) `<form>` element, eg `'.fields'`, `'form#userInput'`
-* Returns: `0` if everything goes OK
+ * `json`: `stream`, `document`, `file`, a `String` containing a URL, or a `String` containing JSON.
+ * `form`: jQuery-like selector that identifies one (and only one) `<form>` element, eg `'.fields'`, `'form#userInput'`.
+* Returns: `0` if everything goes OK.
 * Throws:
- * `SyntaxError` if the number of arguments is not 2
+ * `SyntaxError` if the number of arguments is not 2.
 
 ## Test suite
 
@@ -180,6 +180,6 @@ $ mocha
 
 ## Credits
 
-Copyright &copy; 2014&ndash;2016 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`https://tripu.info`](https://tripu.info/))
+Copyright &copy; 2014&ndash;2016 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`https://tripu.info`](https://tripu.info/)).
 
 This project is licenced [under the terms of the MIT licence](LICENSE.md).
