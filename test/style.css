@@ -4,9 +4,9 @@
   margin:           0;
   border:           0;
   padding:          0;
+  font-family:      Georgia, serif;
   background-color: #f8f8f8;
-  color:            #404040;
-  font-family:      "Lucida Sans Unicode", "Lucida Grande", "Trebuchet MS", Helvetica, Verdana, Geneva, Calibri, sans-serif;
+  color:            #606060;
 }
 
 body {
@@ -16,21 +16,31 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin:           1em 0 0.5em 0;
   clear:            both;
+  font-family:      'Trebuchet MS', Helvetica, sans-serif;
+}
+
+pre {
+  width:            33%;
+  font-family:      'Lucida Console', Monaco, monospace;
+  font-size:        smaller;
+  overflow:         overlay;
+  padding:          .25em;
+  border:           1px solid #c0c0c0;
 }
 
 pre.source {
   float:            left;
-  width:            33%;
-  font-family:      monospace;
-  font-size:        smaller;
-  overflow:         overlay;
-  border:           1px solid #c0c0c0;
   background-color: #ffffff;
+}
+
+pre.result {
+  float:            right;
+  background-color: #fff0f0;
 }
 
 form {
   width:            33%;
-  margin:           0 34%;
+  margin:           0 33.5%;
   padding:          0.5em;
   border:           1px solid #c0c0c0;
   box-shadow:       0 2px 4px #c0c0c0;
@@ -46,3 +56,6 @@ input[type=submit] {
   background-color: #e0e0e0;
 }
 
+p.link {
+  float:            right;
+}
