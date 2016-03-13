@@ -1,7 +1,8 @@
+[![Build Status](https://travis-ci.org/tripu/Performs.svg?branch=master)](https://travis-ci.org/tripu/Performs)
 
 # <span style="color: #c00000;">Per</span>forms
 
-*An HTML UI engine written in JavaScript.*
+An HTML UI engine written in JavaScript.
 
 * [Web site](https://tripu.github.io/Performs/)
 * [GitHub](https://tripu.github.io/Performs)
@@ -184,4 +185,3 @@ $ mocha
 Copyright © 2014–2015 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`http://tripu.info`](http://tripu.info/))
 
 This project is licensed [under the terms of the MIT license](LICENSE.md).
-
