@@ -8,7 +8,7 @@
       "name": "tripu",
       "email": "tripu@tripu.info"
     }
-   ],
+  ],
   "keywords": [
     "performs",
     "form",
@@ -29,24 +29,23 @@
   "preferGlobal": false,
   "private": false,
   "dependencies": {
-    "babel": "^5.5.6",
-    "winston": "^1.0.0",
-    "express": "^4.12",
-    "request": "^2.57",
-    "cheerio": "^0.19",
-    "semver": "^4.3"
+    "cheerio": "0.22.0",
+    "express": "4.16.2",
+    "request": "2.83.0",
+    "semver": "5.4.1",
+    "winston": "2.4.0"
   },
   "devDependencies": {
-    "mocha": "^2.2",
-    "jsdoc": "^3.3"
+    "jsdoc": "3.5.5",
+    "mocha": "4.0.1"
   },
   "scripts": {
-    "test": "mocha --ui bdd",
+    "test": "mocha test/test",
     "test-ui": "node test/test-ui.js",
     "jsdoc": "jsdoc -a all -d api/ -e utf8 -r lib/ test/"
   },
   "engines": {
-    "node": "^0.10",
-    "npm": "^2.4"
+    "node": ">=8.9.1",
+    "npm": ">=5.5.1"
   }
 }

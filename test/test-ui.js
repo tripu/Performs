@@ -8,7 +8,7 @@ var app = new express();
 
 app.use(express.static(__dirname + '/json'));
 
-var static = function(req, res) {
+var staticLoad = function(req, res) {
   fs.readFile(__dirname + '/' + req.originalUrl, function (err, data) {
     if (err) {
       res.status(404).send('Oops!');
@@ -18,9 +18,9 @@ var static = function(req, res) {
   });
 };
 
-app.get('/style.css', static);
-app.get('/favicon.ico', static);
-app.get(/.+\.json/i, static);
+app.get('/style.css', staticLoad);
+app.get('/favicon.ico', staticLoad);
+app.get(/.+\.json/i, staticLoad);
 
 app.get(/(index\.html)?/i, function(req, res) {
   var fileName = req.originalUrl;
@@ -39,4 +39,3 @@ app.get(/(index\.html)?/i, function(req, res) {
 });
 
 app.listen(3000);
-
