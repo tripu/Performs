@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "jsdoc": "3.5.5",
-    "mocha": "4.0.1"
+    "mocha": "6.2.2"
   },
   "scripts": {
     "test": "mocha test/test",
