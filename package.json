@@ -1,6 +1,6 @@
 {
   "name": "performs",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "An HTML UI engine written in JavaScript",
   "author": "tripu <tripu@tripu.info> http://tripu.info/",
   "contributors": [

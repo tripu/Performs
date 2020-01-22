@@ -19,7 +19,7 @@ var assert       = require('assert'),
 
 // Pseudo-constants:
 var URL_WRONG = 'http://i-do.not/exist';
-var URL_RIGHT = 'https://tripu.github.io/Performs/data/definition/simple-contact-form.json';
+var URL_RIGHT = 'https://tripu.github.io/Performs/doc/data/definition/simple-contact-form.json';
 
 describe('lib/utils', function() {
 
@@ -110,4 +110,3 @@ describe('Public interface: class Performs', function() {
   });
 
 });
-
