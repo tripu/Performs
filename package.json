@@ -1,6 +1,6 @@
 {
   "name": "performs",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "An HTML UI engine written in JavaScript",
   "author": "tripu <tripu@tripu.info> http://tripu.info/",
   "contributors": [
@@ -26,6 +26,7 @@
     "url": "https://github.com/tripu/Performs/issues"
   },
   "main": "lib/performs.js",
+  "files": "lib/",
   "preferGlobal": false,
   "private": false,
   "dependencies": {

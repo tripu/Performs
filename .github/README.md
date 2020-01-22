@@ -164,7 +164,7 @@ The class `Performs` exposes the following properties and methods.
 ### Property `version`
 
 * Type: `String`
-* Example: `'0.2.0'`
+* Example: `'0.4.1'`
 
 ### Method `perform`
 

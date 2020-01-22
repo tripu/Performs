@@ -1,6 +1,6 @@
 {
 	"id": "constants",
-	"schema": "performs-0.5",
+	"schema": "performs-0.4.1",
 	"version": "1",
 	"constants": [{
 		"id": "vat",
