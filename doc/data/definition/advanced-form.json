@@ -1,0 +1,12 @@
+{
+	"id": "advanced-form",
+	"schema": "performs-0.5",
+	"version": "1",
+	"include": ["constants", "header"],
+	"content": [{
+		"id": "manager",
+		"type": "string",
+		"label": "Manager",
+		"required": true
+	}]
+}
