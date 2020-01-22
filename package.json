@@ -31,12 +31,12 @@
   "dependencies": {
     "cheerio": "0.22.0",
     "express": "4.17.1",
-    "request": "2.83.0",
+    "request": "2.88.0",
     "semver": "5.4.1",
     "winston": "3.2.1"
   },
   "devDependencies": {
-    "jsdoc": "3.5.5",
+    "jsdoc": "3.6.3",
     "mocha": "4.0.1"
   },
   "scripts": {
