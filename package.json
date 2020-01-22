@@ -34,19 +34,25 @@
     "express": "^4.17.1",
     "request": "^2.88.0",
     "semver": "^7.1.1",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "wtfnode": "^0.8.1"
   },
   "devDependencies": {
     "jsdoc": "^3.6.3",
     "mocha": "^7.0.0"
   },
   "scripts": {
-    "test": "mocha test/test",
+    "test": "mocha test/test.js",
     "test-ui": "node test/test-ui.js",
-    "jsdoc": "jsdoc -a all -d api/ -e utf8 -r lib/ test/"
+    "jsdoc": "jsdoc -c jsdoc.json"
   },
   "engines": {
     "node": ">=10",
     "npm": ">=6"
+  },
+  "mocha": {
+    "reporter": "spec",
+    "color": true,
+    "growl": true
   }
 }
