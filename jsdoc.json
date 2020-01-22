@@ -1,0 +1,19 @@
+{
+  "source": {
+    "include": [
+      "lib/",
+      "test/"
+    ]
+  },
+  "sourceType": "all",
+  "templates": {
+    "default": {
+      "includeDate": false
+    }
+  },
+  "opts": {
+    "destination": "api/",
+    "recurse": true,
+    "encoding": "utf8"
+  }
+}
