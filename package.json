@@ -29,6 +29,9 @@
   "files": "lib/",
   "preferGlobal": false,
   "private": false,
+  "publishConfig": {
+    "registry": "https://www.npmjs.com"
+  },
   "dependencies": {
     "cheerio": "^0.22.0",
     "express": "^4.17.1",
