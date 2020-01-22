@@ -30,7 +30,7 @@
   "private": false,
   "dependencies": {
     "cheerio": "0.22.0",
-    "express": "4.16.2",
+    "express": "4.17.1",
     "request": "2.88.0",
     "semver": "5.4.1",
     "winston": "3.2.1"
