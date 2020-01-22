@@ -16,7 +16,7 @@ An HTML UI engine written in JavaScript.
 Server-side only:
 
 ```bash
-$ npm install performs
+$ npm i performs
 ```
 
 Either server- or client-side:
@@ -178,7 +178,19 @@ The class `Performs` exposes the following properties and methods.
 ## Test suite
 
 ```bash
-$ mocha
+$ npm t
+```
+
+At some point, `npm run test-ui` will work, too.
+
+## Documentation
+
+General documentation, introduction to the projects, and some live examples are under `doc/`.
+
+Generated documentation (ie, the API reference) can be refreshed under `api/` running this command:
+
+```bash
+$ npm run jsdoc
 ```
 
 ## Credits
