@@ -2,7 +2,7 @@
 /**
  * Performs test suite.
  * Performs is an HTML UI engine written in JavaScript; this is the test suite written for it.
- * @author tripu <a href="mailto:tripu@tripu.info"><code>tripu@tripu.info</code></a> <a href="http://tripu.info"><code>http://tripu.info</code></a>
+ * @author tripu <a href="mailto:t@tripu.info"><code>t@tripu.info</code></a> <a href="https://tripu.info/"><code>https://tripu.info</code></a>
  */
 
 'use strict';

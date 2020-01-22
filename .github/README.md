@@ -195,6 +195,6 @@ $ npm run jsdoc
 
 ## Credits
 
-Copyright © 2014–2020 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`http://tripu.info`](http://tripu.info/))
+Copyright © 2014–2020 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`https://tripu.info`](https://tripu.info/))
 
 This project is licensed [under the terms of the MIT license](LICENSE.md).
