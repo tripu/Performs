@@ -82,7 +82,7 @@ Model.prototype.build = function(definition) {
 
   def = definition;
 
-  if (!(def['pf-schema']) || !semver.satisfies(meta.version, def['pf-schema'])) {
+  if (!(def['pf-schema']) || semver.major(meta.version) !== semver.major(def['pf-schema'])) {
     throw new Error('Version "' + def['pf-schema'] + '" not supported!');
   }
 
@@ -141,7 +141,6 @@ Model.prototype.inject = function(form) {
 };
 
 exports.Model = Model;
-
 </code></pre>
         </article>
     </section>
