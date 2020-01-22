@@ -29,15 +29,15 @@
   "preferGlobal": false,
   "private": false,
   "dependencies": {
-    "cheerio": "0.22.0",
-    "express": "4.17.1",
-    "request": "2.88.0",
-    "semver": "7.1.1",
-    "winston": "3.2.1"
+    "cheerio": "^0.22.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "semver": "^7.1.1",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
-    "jsdoc": "3.6.3",
-    "mocha": "4.0.1"
+    "jsdoc": "^3.6.3",
+    "mocha": "^7.0.0"
   },
   "scripts": {
     "test": "mocha test/test",
@@ -45,7 +45,7 @@
     "jsdoc": "jsdoc -a all -d api/ -e utf8 -r lib/ test/"
   },
   "engines": {
-    "node": ">=8.9.1",
-    "npm": ">=5.5.1"
+    "node": ">=10",
+    "npm": ">=6"
   }
 }

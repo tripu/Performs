@@ -153,7 +153,7 @@ The expressions understood by Performs, like the one above, extend regular JavaS
 possible.
 The basic syntax is:
 
-* Curly brackets signal an expression, eg `{{2015 === new Date().getFullYear()}}`
+* Curly brackets signal an expression, eg `{{2020 === new Date().getFullYear()}}`
 * An ID prefixed by `@` refers to the *value* of that field, eg `{{@givenName.replace(/\s/, '') /* Remove spaces */}}`
 
 ## API
@@ -182,6 +182,6 @@ $ mocha
 
 ## Credits
 
-Copyright © 2014–2017 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`http://tripu.info`](http://tripu.info/))
+Copyright © 2014–2020 tripu ([`t@tripu.info`](mailto:t@tripu.info), [`http://tripu.info`](http://tripu.info/))
 
 This project is licensed [under the terms of the MIT license](LICENSE.md).
