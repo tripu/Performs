@@ -29,12 +29,12 @@
   "main": "lib/performs.js",
   "files": [
     "lib/",
-    ".github/README.md"
+    "README.md"
   ],
   "preferGlobal": false,
   "private": false,
   "publishConfig": {
-    "registry": "https://www.npmjs.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "cheerio": "^0.22.0",
@@ -50,7 +50,9 @@
   "scripts": {
     "test": "mocha test/test.js",
     "test-ui": "node test/test-ui.js",
-    "jsdoc": "jsdoc -c jsdoc.json"
+    "jsdoc": "jsdoc -c jsdoc.json",
+    "prepublishOnly": "cp .github/README.md .",
+    "postpublish": "rm README.md"
   },
   "engines": {
     "node": ">=10",
