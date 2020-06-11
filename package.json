@@ -45,7 +45,7 @@
   "devDependencies": {
     "express": "^4.17.1",
     "jsdoc": "^3.6.3",
-    "mocha": "^7.0.1"
+    "mocha": "^8.0.1"
   },
   "scripts": {
     "test": "mocha test/test.js",
