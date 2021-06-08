@@ -5,7 +5,6 @@
 An HTML UI engine written in JavaScript.
 
 * [Intro and examples](https://tripu.github.io/Performs/)
-* [API reference](https://tripu.github.io/Performs/api/)
 * [GitHub project](https://github.com/tripu/Performs)
 * [npm package](https://www.npmjs.com/package/performs)
 
