@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tripu/Performs.svg?branch=master)](https://travis-ci.org/tripu/Performs)
+[![Build Status](https://travis-ci.com/tripu/Performs.svg?branch=master)](https://travis-ci.com/tripu/Performs)
 
 # <span style="color: #c00000;">Per</span>forms
 
