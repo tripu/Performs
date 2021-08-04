@@ -41,7 +41,7 @@
     "test-ui": "node test/test-ui.js",
     "jsdoc": "jsdoc -c jsdoc.json",
     "prepublishOnly": "cp .github/README.md .",
-    "postpublish": "rm README.md"
+    "postpublish": "rm -f README.md"
   },
   "engines": {
     "node": "14 || 16",
