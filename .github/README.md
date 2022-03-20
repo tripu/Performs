@@ -1,6 +1,6 @@
 [![npm version](https://img.shields.io/npm/v/performs.svg)](https://npmjs.org/package/performs)
 [![Licence](https://img.shields.io/npm/l/performs.svg)](https://github.com/tripu/Performs/blob/master/LICENSE.md)
-[![Build Status](https://travis-ci.com/tripu/Performs.svg?branch=master)](https://travis-ci.com/tripu/Performs)
+[![Build Status](https://app.travis-ci.com/tripu/Performs.svg?branch=master)](https://app.travis-ci.com/tripu/Performs)
 
 # <span style="color: #c00000;">Per</span>forms
 
